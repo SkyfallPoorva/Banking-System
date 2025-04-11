@@ -1,54 +1,51 @@
-# Terminal Banking System
+# 💳 Terminal Banking System
 
-A terminal-based banking system built with Python that supports account creation, login, deposits, withdrawals, balance check, and transaction history logging.
+A terminal-based banking system built using Python. This system allows users to securely create accounts, log in, deposit and withdraw funds, check balances, and view transaction history—all from the command line.
 
-## Features
+---
 
-- Account creation with PIN authentication
-- Login system
-- Deposit and withdraw money
-- View balance and transaction history
-- File-based data storage using `accounts.txt` and `transactions.txt`
-- Styled console output using ANSI colors
+## 🚀 Features
 
-## Usage
+- 🆕 Account Creation with PIN authentication
+- 🔐 Login System
+- 💰 Deposit and Withdraw Money
+- 🧾 Balance Check and Transaction History
+- 📁 File-based Data Storage:
+  - `accounts.txt` for account details
+  - `transactions.txt` for transaction logs
+- 🎨 Styled console output using ANSI color codes
 
-Run the following command:
+---
+
+## 🛠️ Project Structure
+
+
+---
+
+## 💡 How It Works
+
+### 🆕 Create Account
+- Enter an **account number** and set a **4-digit PIN**.
+- A new record is added to `accounts.txt`.
+
+### 🔐 Login
+- Authenticate using account number and PIN.
+- Access the secure banking menu on successful login.
+
+### 🏦 Banking Operations
+- **Deposit**: Add money to your account.
+- **Withdraw**: Withdraw money (if balance allows).
+- **Check Balance**: View your current balance.
+- **Transaction History**: View all past transactions from `transactions.txt`.
+
+### 🔓 Logout
+- Safely exit your session.
+
+---
+
+## ▶️ Usage
+
+To run the banking system:
 
 ```bash
 python banking_system.py
-
-# Project Structure
-terminal-banking-system-v2/
-├── banking_system.py         # Main Python application
-├── accounts.txt              # Stores account number, PIN, and balance (auto-generated)
-├── transactions.txt          # Stores transaction logs (auto-generated)
-├── README.md                 # Documentation file
-
-
-💡 How It Works
-Create Account
-
-Enter an account number and set a 4-digit PIN.
-
-A new entry is created in accounts.txt.
-
-Login
-
-Users authenticate using their account number and PIN.
-
-If successful, they enter a secure banking menu.
-
-Banking Operations
-
-Deposit: Add money to your account.
-
-Withdraw: Remove money (if balance is sufficient).
-
-Check Balance: View current balance.
-
-Transaction History: View past transactions stored in transactions.txt.
-
-Logout
-
-Safely exit the user session.
